@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Functions</title> 
+<script type="text/javascript"> 
+  function sum(a, b) {
+    var c = parseFloat(a) + parseFloat(b);
+    return c; // return the value of variable
+  }
+
+  function oddOrEven(a) {
+    var b = a % 2;
+    if (b == 0) {
+      return "EVEN";
+    } else {
+      return "ODD";
+    }
+  }
+</script> 
+</head>
+<body> 
+  <script type="text/javascript">
+    var x, y;
+    x = parseFloat(prompt("Please enter a number"));
+    y = parseFloat(prompt("Please enter another number"));
+
+    // display the value of sum
+    document.write("The sum of the two values is " + sum(x, y));
+    document.write("<br/>The sum is " + oddOrEven(sum(x, y)));
+
+    // give the value returned by sum to oddOrEven and use alert() to display the value returned by oddOrEven()
+    alert(oddOrEven(sum(x, y)));
+  </script>
+</body> 
+</html>
